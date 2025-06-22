@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, accuracy_score
 import joblib
 
 # Cargar dataset
-df = pd.read_csv("diabetes_prediction_dataset.csv")  # Asegúrate de renombrar correctamente tu CSV
+df = pd.read_csv("dataset/diabetes_prediction_dataset.csv")  # Asegúrate de renombrar correctamente tu CSV
 
 # Separar features (X) y target (y)
 X = df.drop("diabetes", axis=1)
