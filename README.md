@@ -26,9 +26,11 @@ Se utilizó un **Gradient Boosting Classifier** integrado con un `ColumnTransfor
 ## 🧱 Arquitectura del Proyecto
 
 ```mermaid
-graph TD
-    A[Usuario] -->|Envía datos médicos| B[API Flask]
-    B --> C[Modelo ML .pkl]
-    C --> D[Predicción]
-    D -->|Probabilidad| E[NAO Robot]
-    E -->|Voz / Respuesta| F[Usuario]
+flowchart TD
+    A[👤 Usuario Final<br>(Proporciona datos clínicos a NAO)] --> B[🤖 Robot NAO<br>Entrada por voz/menú]
+    B --> C{Valida y construye<br>JSON de entrada}
+    C --> D[🌐 API Flask (Servidor)<br>Recibe JSON, ejecuta modelo ML]
+    D --> E{Modelo IA<br>modelo_diabetes_v2.pkl}
+    E --> F[📊 Resultado: Probabilidad y predicción]
+    F --> G[🤖 Robot NAO<br>Responde por voz/muestra mensaje]
+
