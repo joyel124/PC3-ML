@@ -175,5 +175,11 @@ El video muestra:
 * Arquitectura del sistema.
 * Funcionamiento en tiempo real con el robot NAO.
 
-## 👨‍💻 Créditos
+## 👨‍💻 Integrantes
+
+* u202013066 Christian Joel Cutipa Cañapataña 
+* u202112986 José Giovanni Laura Silvera
+* u202116752 Cesar Rafael Sanchez Garay
+* u20191b823 Nicola Rovegno Chavez
+
 
