@@ -23,14 +23,23 @@ Se utilizó un **Gradient Boosting Classifier** integrado con un `ColumnTransfor
 
 ---
 
-## 🧱 Arquitectura del Proyecto
+## 📁 Arquitectura del Proyecto
 
-```mermaid
-flowchart TD
-    A[👤 Usuario Final<br>(Proporciona datos clínicos a NAO)] --> B[🤖 Robot NAO<br>Entrada por voz/menú]
-    B --> C{Valida y construye<br>JSON de entrada}
-    C --> D[🌐 API Flask (Servidor)<br>Recibe JSON, ejecuta modelo ML]
-    D --> E{Modelo IA<br>modelo_diabetes_v2.pkl}
-    E --> F[📊 Resultado: Probabilidad y predicción]
-    F --> G[🤖 Robot NAO<br>Responde por voz/muestra mensaje]
+---
 
+## 📁 Estructura del Carpetas
+
+```plaintext
+project-root/
+├── client/
+│   └── nao.py                    # Script que ejecuta el robot NAO (cliente)
+│
+├── server/
+│   ├── dataset/
+│   │   └── diabetes_prediction_dataset.csv   # Dataset usado para entrenar
+│   ├── main.py                  # Servidor Flask que expone el endpoint /predecir
+│   ├── model2.py                # Script de entrenamiento del modelo de IA
+│   └── modelo_diabetes_v2.pkl   # Modelo entrenado exportado con joblib
+
+```
+---
