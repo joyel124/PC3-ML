@@ -141,27 +141,14 @@ python nao.py
 
 El mensaje será mostrado como un globo sobre la cabeza del NAO.
 
-✅ Ejemplo de Entrada JSON
-
-```json
-{
-  "gender": "Female",
-  "age": 44,
-  "hypertension": 0,
-  "heart_disease": 0,
-  "smoking_history": "never",
-  "bmi": 19.31,
-  "HbA1c_level": 6.5,
-  "blood_glucose_level": 200
-}
-```
-
 🧪 Ejemplo de uso (NAO)
 
 ```bash
 python client/nao.py
 ```
-NAO dirá:
+Primero, NAO empezará a hacer preguntas y el usuario las responderá por la consola (En el caso de usar el simulador).
+
+Luego de procesar las respuestas del usuario, NAO les dirá:
 * ¡Tienes un alto riesgo de diabetes!" si el modelo predice riesgo (1)
 * No se detecta riesgo de diabetes." si el modelo predice (0)
 
