@@ -156,7 +156,7 @@ Luego de procesar las respuestas del usuario, NAO les dirá:
 
 ## 📺 Video Explicativo
 📽️ Enlace al video de demostración (no listado en YouTube):
-👉 https://youtu.be/ENLACE-DEMO-AQUI
+👉 [https://youtu.be/33a0ocdVoBQ](https://youtu.be/33a0ocdVoBQ)
 
 El video muestra:
 
