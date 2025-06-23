@@ -42,6 +42,8 @@ Se utilizó un **Gradient Boosting Classifier** integrado con un `ColumnTransfor
 
 ## 📁 Arquitectura del Proyecto
 
+![Diagrama](diagrama.png)
+
 ---
 
 ## 📁 Estructura del Carpetas
